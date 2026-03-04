@@ -1,8 +1,8 @@
-# NovelForge AI ✦
+# NovelForge AI
 
 **NovelForge AI** is a professional-grade, full-stack platform designed to guide writers from raw ideas to structured story bibles and fully generated, quality-checked novels.
 
-## 🚀 The Multi-Agent Debate Engine
+## The Multi-Agent Debate Engine
 
 Unlike simple LLM wrappers, NovelForge uses a **Layered Multi-Agent Pipeline** to ensure literary quality:
 
@@ -12,9 +12,9 @@ Unlike simple LLM wrappers, NovelForge uses a **Layered Multi-Agent Pipeline** t
 
 This process loops for a maximum of 3 rounds per chapter, ensuring every scene is polished and consistent.
 
----
 
-## 🛠️ Tech Stack
+
+## Tech Stack
 
 ### Frontend
 
@@ -31,9 +31,9 @@ This process loops for a maximum of 3 rounds per chapter, ensuring every scene i
 - **Auth:** JWT with Role-Based Access Control (Guest, Author, Admin)
 - **LLM Integration:** OpenRouter API
 
----
 
-## 📂 Project Structure
+
+## Project Structure
 
 ```text
 novelforge/
@@ -53,9 +53,9 @@ novelforge/
     └── .env.local     # Frontend config
 ```
 
----
 
-## 🚦 Getting Started
+
+## Getting Started
 
 ### 1. Prerequisites
 
@@ -90,21 +90,19 @@ bun run dev --port 3000
 
 Visit [http://localhost:3000](http://localhost:3000).
 
----
 
-## 👥 User Roles
+
+## User Roles
 
 - **Guest:** Landing page visibility and feature overview.
 - **Author:** Full CRUD on stories, prototype generation, and chapter debate pipeline.
 - **Admin:** Global oversight of users and content.
 
-## 📖 Features
+
+
+## Features
 
 - **Interactive Story Wizard:** Define genre, world, characters, and tone.
 - **Automated Story Bible:** AI builds a structured synopsis and chapter outline.
 - **Quality Reports:** Every chapter includes a "Critic's Score" and debate logs.
 - **Markdown Export:** Download your completed novel for external use.
-
----
-
-Created with ❤️ by Antigravity.
