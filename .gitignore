@@ -1,0 +1,26 @@
+# Common
+.DS_Store
+.env
+.env.*
+node_modules/
+.next/
+.venv/
+__pycache__/
+*.db
+*.sqlite3
+
+# Backend specific
+backend/build/
+backend/dist/
+backend/wheels/
+backend/*.egg-info/
+
+# Frontend specific
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
