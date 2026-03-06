@@ -2,17 +2,51 @@
 
 **NovelForge AI** is a professional-grade, full-stack platform designed to guide writers from raw ideas to structured story bibles and fully generated, quality-checked novels.
 
-## The Multi-Agent Debate Engine
+## Background & Problem
 
-Unlike simple LLM wrappers, NovelForge uses a **Layered Multi-Agent Pipeline** to ensure literary quality:
+Current AI writing tools often suffer from "context drift" and lack of narrative cohesion. One-shot generation leads to inconsistent character behavior, repetitive prose, and plot holes. Professional and aspiring writers need a system that doesn't just "write," but "authors"—mimicking the iterative process of brainstorming, outlining, drafting, and rigorous editing.
 
-1.  **Writer Agent** (`llama-3.3-70b`): Generates raw chapter drafts based on the story bible and prior context.
-2.  **Critic Agent** (`llama-3.3-70b`): Scores the draft (0–10) against the story bible, user settings, and plot consistency.
-3.  **Arbiter Agent** (`llama-3.3-70b`): Reviews the draft and the critic's objections, then provides specific rewrite instructions if the score is below 7.
+## Objectives
 
-This process loops for a maximum of 3 rounds per chapter, ensuring every scene is polished and consistent.
+- **Structural Integrity:** Ensure every chapter aligns with a pre-defined story bible.
+- **Literary Quality:** Use a multi-agent debate process to refine drafts before the user ever sees them.
+- **Consistency:** Maintain a persistent world-state and character logic throughout the entire manuscript.
+- **Empowerment:** Provide writers with a "creative co-pilot" rather than a simple text generator.
 
+## Scope
 
+NovelForge AI focuses on the end-to-end novel creation process:
+
+- **Conceptualization:** Transforming seeds of ideas into detailed world-building.
+- **Outlining:** Automated generation of plot points and chapter beats.
+- **Drafting:** High-fidelity chapter generation using the Multi-Agent Debate Engine.
+- **Refinement:** Continuous quality reports and iterative improvements.
+
+## Target Users & Roles
+
+- **Guest:** Experience the landing page, view feature overviews, and understand the platform's value.
+- **Author:** The primary user. Can create stories, manage Story Bibles, run the generation pipeline, and export manuscripts.
+- **Admin:** Manages platform health, oversees user accounts, and monitors system performance.
+
+## Core Features
+
+- **Interactive Story Wizard:** Step-by-step guidance to define genre, world-rules, character arcs, and tone.
+- **Automated Story Bible:** AI constructs a comprehensive database of your story's lore, characters, and plot structure.
+- **Multi-Agent Debate Engine:** A sophisticated pipeline (Writer, Critic, Arbiter) that self-corrects drafts to ensure high literary standards.
+- **Quality Reports:** Comprehensive feedback for every chapter, including "Critic's Scores" and detailed debate logs.
+- **Markdown Export:** Seamless transition from platform to professional editing software.
+
+## System Workflow
+
+1.  **Directives:** The user provides a prompt or genre.
+2.  **Forging the Bible:** The AI generates a "Story Bible" containing characters, locations, and a chapter-by-chapter outline.
+3.  **The Debate Loop:**
+    - **Writer Agent** (`llama-3.3-70b`): Generates a draft based on the Bible.
+    - **Critic Agent** (`llama-3.3-70b`): Evaluates for consistency, tone, and pacing.
+    - **Arbiter Agent** (`llama-3.3-70b`): Instructs the Writer to revise if the quality score is low.
+4.  **Completion:** The user reviews the final polished draft and exports the manuscript.
+
+<br/>
 
 ## Tech Stack
 
@@ -30,8 +64,6 @@ This process loops for a maximum of 3 rounds per chapter, ensuring every scene i
 - **Database:** SQLAlchemy + SQLite (aiosqlite)
 - **Auth:** JWT with Role-Based Access Control (Guest, Author, Admin)
 - **LLM Integration:** OpenRouter API
-
-
 
 ## Project Structure
 
@@ -52,8 +84,6 @@ novelforge/
     │   └── contexts/  # Auth state management
     └── .env.local     # Frontend config
 ```
-
-
 
 ## Getting Started
 
@@ -89,20 +119,3 @@ bun run dev --port 3000
 ```
 
 Visit [http://localhost:3000](http://localhost:3000).
-
-
-
-## User Roles
-
-- **Guest:** Landing page visibility and feature overview.
-- **Author:** Full CRUD on stories, prototype generation, and chapter debate pipeline.
-- **Admin:** Global oversight of users and content.
-
-
-
-## Features
-
-- **Interactive Story Wizard:** Define genre, world, characters, and tone.
-- **Automated Story Bible:** AI builds a structured synopsis and chapter outline.
-- **Quality Reports:** Every chapter includes a "Critic's Score" and debate logs.
-- **Markdown Export:** Download your completed novel for external use.
