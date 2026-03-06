@@ -15,12 +15,20 @@ Current AI writing tools often suffer from "context drift" and lack of narrative
 
 ## Scope
 
+### In Scope
+
 NovelForge AI focuses on the end-to-end novel creation process:
 
 - **Conceptualization:** Transforming seeds of ideas into detailed world-building.
 - **Outlining:** Automated generation of plot points and chapter beats.
-- **Drafting:** High-fidelity chapter generation using the Multi-Agent Debate Engine.
-- **Refinement:** Continuous quality reports and iterative improvements.
+- **Drafting:** Chapter generation using the Multi-Agent Debate Engine.
+
+### Out of Scope
+
+- **Final Formatting:** Professional typesetting (e.g., LaTeX, InDesign) is delegated to specialized software.
+- **Distribution:** No built-in marketplace or direct-to-Kindle publishing features.
+- **Graphic Design:** Cover art generation or interior illustrations are not currently supported.
+- **Non-Fiction:** The platform is specifically optimized for narrative fiction and creative storytelling.
 
 ## Target Users & Roles
 
@@ -41,9 +49,9 @@ NovelForge AI focuses on the end-to-end novel creation process:
 1.  **Directives:** The user provides a prompt or genre.
 2.  **Forging the Bible:** The AI generates a "Story Bible" containing characters, locations, and a chapter-by-chapter outline.
 3.  **The Debate Loop:**
-    - **Writer Agent** (`llama-3.3-70b`): Generates a draft based on the Bible.
-    - **Critic Agent** (`llama-3.3-70b`): Evaluates for consistency, tone, and pacing.
-    - **Arbiter Agent** (`llama-3.3-70b`): Instructs the Writer to revise if the quality score is low.
+    - **Writer Agent**: Generates a draft based on the Bible.
+    - **Critic Agent**: Evaluates for consistency, tone, and pacing.
+    - **Arbiter Agent**: Instructs the Writer to revise if the quality score is low.
 4.  **Completion:** The user reviews the final polished draft and exports the manuscript.
 
 <br/>
@@ -55,7 +63,6 @@ NovelForge AI focuses on the end-to-end novel creation process:
 - **Framework:** Next.js 15+ (App Router)
 - **Runtime:** Bun
 - **Styling:** TailwindCSS 4.0
-- **Design:** Modern dark-theme with Glassmorphism and gradient accents.
 
 ### Backend
 
