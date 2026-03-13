@@ -1,17 +1,17 @@
 # NovelForge AI
 
-**NovelForge AI** is a professional-grade, full-stack platform designed to guide writers from raw ideas to structured story bibles and fully generated, quality-checked novels.
+**NovelForge AI** is a full-stack platform designed to guide writers from raw ideas to structured story bibles and fully generated novels.
 
 ## Background & Problem
 
-Current AI writing tools often suffer from "context drift" and lack of narrative cohesion. One-shot generation leads to inconsistent character behavior, repetitive prose, and plot holes. Professional and aspiring writers need a system that doesn't just "write," but "authors"—mimicking the iterative process of brainstorming, outlining, drafting, and rigorous editing.
+Current AI writing tools often suffer from context drift and a lack of narrative cohesion. One-shot generation leads to inconsistent character behavior, repetitive prose, and plot holes. Professional and aspiring writers need a system that doesn't just write but authors—mimicking the iterative process of brainstorming, outlining, drafting, and rigorous editing.
 
 ## Objectives
 
 - **Structural Integrity:** Ensure every chapter aligns with a pre-defined story bible.
 - **Literary Quality:** Use a multi-agent debate process to refine drafts before the user ever sees them.
 - **Consistency:** Maintain a persistent world-state and character logic throughout the entire manuscript.
-- **Empowerment:** Provide writers with a "creative co-pilot" rather than a simple text generator.
+- **Empowerment:** Provide writers with a creative co-pilot rather than a simple text generator.
 
 ## Scope
 
@@ -27,7 +27,7 @@ NovelForge AI focuses on the end-to-end novel creation process:
 
 - **Final Formatting:** Professional typesetting (e.g., LaTeX, InDesign) is delegated to specialized software.
 - **Distribution:** No built-in marketplace or direct-to-Kindle publishing features.
-- **Graphic Design:** Cover art generation or interior illustrations are not currently supported.
+- **Graphic Design:** Cover art generation or interior illustrations are not supported.
 - **Non-Fiction:** The platform is specifically optimized for narrative fiction and creative storytelling.
 
 ## Target Users & Roles
@@ -40,14 +40,14 @@ NovelForge AI focuses on the end-to-end novel creation process:
 
 - **Interactive Story Wizard:** Step-by-step guidance to define genre, world-rules, character arcs, and tone.
 - **Automated Story Bible:** AI constructs a comprehensive database of your story's lore, characters, and plot structure.
-- **Multi-Agent Debate Engine:** A sophisticated pipeline (Writer, Critic, Arbiter) that self-corrects drafts to ensure high literary standards.
-- **Quality Reports:** Comprehensive feedback for every chapter, including "Critic's Scores" and detailed debate logs.
+- **Multi-Agent Debate Engine:** A pipeline (Writer, Critic, Arbiter) that self-corrects drafts to ensure high literary standards.
+- **Quality Reports:** Comprehensive feedback for every chapter, including critics' scores and detailed debate logs.
 - **Markdown Export:** Seamless transition from platform to professional editing software.
 
 ## System Workflow
 
-1.  **Directives:** The user provides a prompt or genre.
-2.  **Forging the Bible:** The AI generates a "Story Bible" containing characters, locations, and a chapter-by-chapter outline.
+1.  **Directives:** The user provides a prompt.
+2.  **Forging the Bible:** The AI generates a Story Bible containing characters, locations, and a chapter-by-chapter outline.
 3.  **The Debate Loop:**
     - **Writer Agent**: Generates a draft based on the Bible.
     - **Critic Agent**: Evaluates for consistency, tone, and pacing.
